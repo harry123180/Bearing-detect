@@ -36,8 +36,8 @@ def OA(Amplitude):
     return 0.8165*pow(total_square,0.5)
 file = open('result.txt', 'w')
 file.write("1axis_OA            2axis_OA            3axis_OA \n")
-for cnt in range(100):
-    data1,data2,data3 = open_file(path = 'output'+str(cnt)+'.txt')
+for cnt in range(10):
+    data1,data2,data3 = open_file(path = 'normal\\'+str(cnt+1)+'.txt')
     """ ***********************  """
     y_data1 = np.array(data1)
     y_data2 = np.array(data2)

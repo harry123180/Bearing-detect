@@ -1,4 +1,4 @@
-path = 'output.txt'
+path = 'ceramics\\3.txt'
 f = open(path, 'r')
 from matplotlib import pyplot as plt
 import numpy as np
@@ -38,9 +38,9 @@ ax1 = fig.add_subplot(311)#2個圖 橫版只放1 1號位置
 ax2 = fig.add_subplot(312)#2個圖 橫版只放1 2號位置
 ax3 = fig.add_subplot(313)#2個圖 橫版只放1 2號位置
 """ ***********************  """
-a1,b1= fftx(y_data1,1024,1000)
-a2,b2= fftx(y_data2,1024,1000)
-a3,b3= fftx(y_data3,1024,1000)
+a1,b1= fftx(y_data1,256,1000)
+a2,b2= fftx(y_data2,256,1000)
+a3,b3= fftx(y_data3,256,1000)
 ax1.plot(a1,b1)
 ax2.plot(a2,b2)
 ax3.plot(a3,b3)

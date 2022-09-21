@@ -39,15 +39,15 @@ def OA(Amplitude):
 x = []
 y = []
 z = []
-for cnt in range(100):
-    data1,data2,data3 = open_file(path = 'output'+str(cnt)+'.txt')
+for cnt in range(10):
+    data1,data2,data3 = open_file(path = 'ceramics\\'+str(cnt+1)+'.txt')
     """ ***********************  """
     y_data1 = np.array(data1)
     y_data2 = np.array(data2)
     y_data3 = np.array(data3)
-    a1, b1 = fftx(y_data1, 1024, 1000)
+    a1, b1 = fftx(y_data1, 256, 1000)
     x.append(a1)
-    y.append(np.ones((512)) * cnt)
+    y.append(np.ones((128)) * cnt)
     z.append(b1)
 
 fig = plt.figure(figsize=(8,6))
