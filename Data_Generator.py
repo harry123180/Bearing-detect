@@ -1,5 +1,5 @@
 import random
-for i in range(100):
+for i in range(1):
     path = 'output'+str(i)+'.txt'
     f = open(path, 'w')
     def data_maker():
